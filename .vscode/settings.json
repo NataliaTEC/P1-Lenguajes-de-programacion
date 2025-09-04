@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "pedidos.h": "c",
+        "string.h": "c"
+    }
+}
