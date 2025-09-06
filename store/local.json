@@ -1,0 +1,17 @@
+{ 
+    "local": [ 
+        {
+            "nombre": "X",
+            "telefono": 12345678,
+            "cedula": 703110186,
+            "horario": {"inicio": "13:00", "final": "17:00"},
+            "siguiente": 1,
+            "usuarios":[
+                {
+                    "usuario": "sermonbadi",
+                    "password": "sermonbadi"
+                }
+            ]
+        }
+    ]
+}

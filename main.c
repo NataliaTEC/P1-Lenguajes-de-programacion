@@ -1,13 +1,23 @@
 #include "headers/libros.h"
 #include "headers/pedidos.h"
+#include "headers/clientes.h"
+#include "headers/locales.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 #include <stdbool.h>
 
 void admin(){
-    printf("Estamos en admin");
-    
+    system("clear");
+    printf("Menú de opciones administrativas:\n");
+    printf("1- Registrar Libros\n");
+    printf("2- Manejo de inventario\n");
+    printf("3- Registrar clientes\n");
+    printf("4- Crear Pedido\n");
+    printf("5- Estadisticas\n");
+    printf("6- Regresar");
+    int respuesta;
+    if(scanf("%d", &respuesta)==1){printf("Validar");}
 }
 
 void general(){
