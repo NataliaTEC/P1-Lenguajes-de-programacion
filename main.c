@@ -32,11 +32,11 @@ int main() {
         int respuesta;
         if(scanf("%d", &respuesta)==1){
             if(respuesta == 1) {
-            admin();
+                admin();
             } else if(respuesta == 2) {
                 general();
             } else if(respuesta == 3) {
-                printf("¿Estás seguro que deseas salir (Y/N):");
+                printf("¿Estás seguro que deseas salir (Y/N): ");
                 char *res;
                 scanf("%s", res);
                 if(!strcmp(res, "n") || !strcmp(res, "N")){ main();}
@@ -44,11 +44,13 @@ int main() {
                     exit(0);
                 }
             } else {
-                printf("Opción no válida. Por favor ingrese una de las opciones.\n");
+                system("clear");
+                printf("\033[0;31mOpción no válida. Por favor ingrese una de las opciones.\033[0m\n");
                 main();
             }
         }else{
-            printf("Entrada incorrecta. Por favor, ingresa un número\n");
+            system("clear");
+            printf("\033[0;31mEntrada incorrecta. Por favor, ingresa un número\033[0m\n");
             limpiarBuffer();
         }
         
