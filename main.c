@@ -21,7 +21,12 @@ void limpiarBuffer() {
     while ((c = getchar()) != '\n' && c != EOF);
 }
 
+void limpiarPantalla() {
+    system("clear");
+}
+
 int main() {
+    limpiarPantalla();
     while(true){
         printf("Bienvenido al sistema de Librería\n");
         printf("Menu principal:\n");
@@ -49,7 +54,7 @@ int main() {
                 main();
             }
         }else{
-            system("clear");
+            limpiarPantalla();
             printf("\033[0;31mEntrada incorrecta. Por favor, ingresa un número\033[0m\n");
             limpiarBuffer();
         }
