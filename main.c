@@ -5,6 +5,9 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+
+
+
 void admin(){
     printf("Estamos en admin");
     
@@ -14,19 +17,14 @@ void general(){
     printf("Estamos en general");
 }
 
-
-
 void limpiarBuffer() {
     int c;
     while ((c = getchar()) != '\n' && c != EOF);
 }
 
-void limpiarPantalla() {
-    system("clear");
-}
 
 int main() {
-    limpiarPantalla();
+    system("clear");
     while(true){
         printf("Bienvenido al sistema de Librería\n");
         printf("Menu principal:\n");
@@ -54,7 +52,7 @@ int main() {
                 main();
             }
         }else{
-            limpiarPantalla();
+            system("clear");
             printf("\033[0;31mEntrada incorrecta. Por favor, ingresa un número\033[0m\n");
             limpiarBuffer();
         }
