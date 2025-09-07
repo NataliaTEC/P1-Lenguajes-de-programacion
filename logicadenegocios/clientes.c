@@ -166,13 +166,14 @@ void registrarClientes(char* nombre, char* cedula, char* telefono) {
 
 
 void registrarCliente(void) {
+	
     char nombre[100];
     char cedula[100];
     char telefono[100];
     bool datosValidos = false;
     
     printf("\n=== REGISTRAR NUEVO CLIENTE ===\n");
-    
+
     while (!datosValidos) {
 
         do {
